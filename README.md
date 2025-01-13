@@ -136,16 +136,15 @@ points_3d = points_3d_homogeneous[:3] / points_3d_homogeneous[3]
 ### 5. Visualisation 3D
 
 #### 5.1 Matplotlib
-Dans `plotTriangulatedPoints`, on utilise un subplot 3D :
+Dans `plotTriangulatedPoints`, on cré un plot 3D :
 ```python
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(x, y, z, c='r', marker='o')
 ```
-Pour afficher des points 3D (ex : coins du damier, points d’intérêt, etc.).
 
 #### 5.2 Plotly
-La fonction `plotTriangulatedPointsInteractive` utilise Plotly pour faire une visualisation interactive dans le navigateur :
+La fonction `plotTriangulatedPointsInteractive` utilise Plotly pour faire une visualisation interactive :
 ```python
 fig.add_trace(go.Scatter3d(
     x=x, y=y, z=z,
