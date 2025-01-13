@@ -200,14 +200,6 @@ fig.add_trace(go.Scatter3d(
 ## **Résultats**
 ### **Calibration**
 - Les matrices obtenues permettent de corriger la distorsion des images et de modéliser précisément les caméras.
-- Exemple de matrice intrinsèque (\( \mathbf{K} \)) :
-\[
-\mathbf{K} = \begin{bmatrix}
-fx & 0 & cx \\
-0 & fy & cy \\
-0 & 0 & 1
-\end{bmatrix}
-\]
 
 ### **Reconstruction 3D**
 Les points reconstruits forment une représentation cohérente de l’objet scanné. Les épilignes alignent correctement les points correspondants, et la triangulation produit une structure réaliste.
